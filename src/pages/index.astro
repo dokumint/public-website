@@ -26,20 +26,20 @@ const siteDescription =
              dark:bg-gray-950 dark:text-gray-100">
 
   <!-- HEADER -->
-  <header class="pt-4 mb-20">
-  <div class="max-w-3xl mx-auto px-6">
-    <img
-      src="/assets/logo/dokumint.svg"
-      alt="Dokumint"
-      class="h-8 dark:hidden"
-    />
-    <img
-      src="/assets/logo/dokumint-dark.svg"
-      alt="Dokumint"
-      class="h-8 hidden dark:block"
-    />
-  </div>
-</header>
+  <header class="border-b border-gray-200 dark:border-gray-800 mb-20">
+	<div class="max-w-3xl mx-auto px-6 py-6">
+		<img
+		src="/assets/logo/dokumint.svg"
+		alt="Dokumint"
+		class="h-8 dark:hidden"
+		/>
+		<img
+		src="/assets/logo/dokumint-dark.svg"
+		alt="Dokumint"
+		class="h-8 hidden dark:block"
+		/>
+	</div>
+  </header>
 
   <main class="max-w-3xl mx-auto px-6 py-16 space-y-20">
 
@@ -55,7 +55,7 @@ const siteDescription =
 					technicians actually work — not how vendors want to sell.
 				</p>
 			</section>
-
+			<hr class="border-gray-200 dark:border-gray-800 my-20" />
 			<!-- WHY -->
 			<section class="space-y-4">
 				<h2 class="text-2xl font-semibold tracking-tight">
@@ -73,43 +73,47 @@ const siteDescription =
 					were treated as first-class concerns from day one.
 				</p>
 			</section>
-
+			<hr class="border-gray-200 dark:border-gray-800 my-20" />
 			<!-- INCLUDED BY DEFAULT -->
 			<section class="space-y-4">
 				<h2 class="text-2xl font-semibold tracking-tight">
 					Included by default
 				</h2>
 
-				<ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
+				<div class="border border-gray-200 dark:border-gray-800 rounded-lg p-6">
+					<ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
 					<li>Proper multi-tenancy (not an afterthought)</li>
 					<li>Role-based access control</li>
 					<li>Structured, typed assets</li>
 					<li>Encrypted password storage</li>
 					<li>Revision history</li>
 					<li>API-first design</li>
-				</ul>
+					</ul>
+				</div>
 			</section>
-
+			<hr class="border-gray-200 dark:border-gray-800 my-20" />
 			<!-- STAND APART -->
 			<section class="space-y-4">
 				<h2 class="text-2xl font-semibold tracking-tight">
 					Designed around reality
 				</h2>
 
-				<ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
-					<li>
-						Assets aren’t flat notes — they’re structured, queryable, and typed.
-					</li>
-					<li>
-						Passwords can live where they make sense, not just in a disconnected
-						vault.
-					</li>
-					<li>
-						Tenants, customers, and technicians are cleanly separated by design.
-					</li>
-				</ul>
+				<div class="border border-gray-200 dark:border-gray-800 rounded-lg p-6">
+					<ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
+						<li>
+							Assets aren’t flat notes — they’re structured, queryable, and typed.
+						</li>
+						<li>
+							Passwords can live where they make sense, not just in a disconnected
+							vault.
+						</li>
+						<li>
+							Tenants, customers, and technicians are cleanly separated by design.
+						</li>
+					</ul>
+				</div>	
 			</section>
-
+			<hr class="border-gray-200 dark:border-gray-800 my-20" />
 			<!-- STATUS -->
 			<section class="space-y-4">
 				<h2 class="text-2xl font-semibold tracking-tight">
@@ -125,7 +129,13 @@ const siteDescription =
 					actually gets used.
 				</p>
 			</section>
-
+			
 		</main>
+		<footer class="border-t border-gray-200 dark:border-gray-800 mt-24">
+			<div class="max-w-3xl mx-auto px-6 py-8 text-sm text-gray-500 dark:text-gray-400">
+				Dokumint is built by MSPs, for MSPs.
+			</div>
+		</footer>
+
 	</body>
 </html>
