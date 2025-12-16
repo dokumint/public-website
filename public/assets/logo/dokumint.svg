@@ -1,0 +1,19 @@
+<svg viewBox="0 0 260 60" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer D shape -->
+  <path d="M10 10 H45 A20 20 0 0 1 45 50 H10 Z"
+        fill="none"
+        stroke="#175684"
+        stroke-width="6"/>
+
+  <!-- Inner corner fold -->
+  <path d="M30 20 L45 20 L45 35 Z"
+        fill="#3BC5A2"/>
+
+  <!-- Text: Dokumint (only 'm' is mint) -->
+  <text x="80" y="40"
+        font-family="Inter, sans-serif"
+        font-size="32"
+        fill="#1a222b">
+    <tspan>Doku</tspan><tspan fill="#3BC5A2">m</tspan><tspan>int</tspan>
+  </text>
+</svg>

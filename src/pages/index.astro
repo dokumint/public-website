@@ -13,85 +13,99 @@ const siteDescription =
     <title>{siteTitle}</title>
     <meta name="description" content={siteDescription} />
 
+		<link rel="icon" href="/favicon/favicon.ico" />
+		<link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" />
+		<link rel="manifest" href="/favicon/site.webmanifest" />
+
     <meta name="robots" content="index, follow" />
   </head>
 
-  <body>
-    <main>
-      <!-- HERO -->
-      <section>
-        <h1>
-          Documentation built by MSPs,<br />
-          not product managers.
-        </h1>
+  <body class="bg-white text-gray-900 antialiased">
+		<main class="max-w-3xl mx-auto px-6 py-20 space-y-20">
 
-        <p>
-          Dokumint is a modern MSP documentation system designed around how
-          technicians actually work — not how vendors want to sell.
-        </p>
-      </section>
+			<!-- HERO -->
+			<section class="space-y-6">
+				<h1 class="text-4xl md:text-5xl font-semibold tracking-tight">
+					Documentation built by MSPs,<br class="hidden sm:block" />
+					not product managers.
+				</h1>
 
-      <!-- WHY -->
-      <section>
-        <h2>Why Dokumint exists</h2>
+				<p class="text-lg text-gray-600 leading-relaxed">
+					Dokumint is a modern MSP documentation system designed around how
+					technicians actually work — not how vendors want to sell.
+				</p>
+			</section>
 
-        <p>
-          Most documentation platforms grew by bolting features onto an old core.
-          Permissions came later. Structure came later. Multi-tenancy came even
-          later.
-        </p>
+			<!-- WHY -->
+			<section class="space-y-4">
+				<h2 class="text-2xl font-semibold tracking-tight">
+					Why Dokumint exists
+				</h2>
 
-        <p>
-          Dokumint started clean. Tenants, roles, permissions, and data boundaries
-          were treated as first-class concerns from day one.
-        </p>
-      </section>
+				<p class="text-gray-700 leading-relaxed">
+					Most documentation platforms grew by bolting features onto an old core.
+					Permissions came later. Structure came later. Multi-tenancy came even
+					later.
+				</p>
 
-      <!-- INCLUDED BY DEFAULT -->
-      <section>
-        <h2>Included by default</h2>
+				<p class="text-gray-700 leading-relaxed">
+					Dokumint started clean. Tenants, roles, permissions, and data boundaries
+					were treated as first-class concerns from day one.
+				</p>
+			</section>
 
-        <ul>
-          <li>Proper multi-tenancy (not an afterthought)</li>
-          <li>Role-based access control</li>
-          <li>Structured, typed assets</li>
-          <li>Encrypted password storage</li>
-          <li>Revision history</li>
-          <li>API-first design</li>
-        </ul>
-      </section>
+			<!-- INCLUDED BY DEFAULT -->
+			<section class="space-y-4">
+				<h2 class="text-2xl font-semibold tracking-tight">
+					Included by default
+				</h2>
 
-      <!-- STAND APART -->
-      <section>
-        <h2>Designed around reality</h2>
+				<ul class="list-disc list-inside space-y-2 text-gray-700">
+					<li>Proper multi-tenancy (not an afterthought)</li>
+					<li>Role-based access control</li>
+					<li>Structured, typed assets</li>
+					<li>Encrypted password storage</li>
+					<li>Revision history</li>
+					<li>API-first design</li>
+				</ul>
+			</section>
 
-        <ul>
-          <li>
-            Assets aren’t flat notes — they’re structured, queryable, and typed.
-          </li>
-          <li>
-            Passwords can live where they make sense, not just in a disconnected
-            vault.
-          </li>
-          <li>
-            Tenants, customers, and technicians are cleanly separated by design.
-          </li>
-        </ul>
-      </section>
+			<!-- STAND APART -->
+			<section class="space-y-4">
+				<h2 class="text-2xl font-semibold tracking-tight">
+					Designed around reality
+				</h2>
 
-      <!-- STATUS -->
-      <section>
-        <h2>Status</h2>
+				<ul class="list-disc list-inside space-y-2 text-gray-700">
+					<li>
+						Assets aren’t flat notes — they’re structured, queryable, and typed.
+					</li>
+					<li>
+						Passwords can live where they make sense, not just in a disconnected
+						vault.
+					</li>
+					<li>
+						Tenants, customers, and technicians are cleanly separated by design.
+					</li>
+				</ul>
+			</section>
 
-        <p>
-          Dokumint is actively developed and used in real MSP environments.
-        </p>
+			<!-- STATUS -->
+			<section class="space-y-4">
+				<h2 class="text-2xl font-semibold tracking-tight">
+					Status
+				</h2>
 
-        <p>
-          We’re not chasing feature parity for the sake of it. We’re building what
-          actually gets used.
-        </p>
-      </section>
-    </main>
-  </body>
+				<p class="text-gray-700 leading-relaxed">
+					Dokumint is actively developed and used in real MSP environments.
+				</p>
+
+				<p class="text-gray-700 leading-relaxed">
+					We’re not chasing feature parity for the sake of it. We’re building what
+					actually gets used.
+				</p>
+			</section>
+
+		</main>
+	</body>
 </html>
