@@ -25,127 +25,167 @@ const siteDescription =
   <body class="bg-white text-gray-900 antialiased
              dark:bg-gray-950 dark:text-gray-100">
 
-  <!-- HEADER -->
-  <header class="border-b border-gray-200 dark:border-gray-800 mb-20">
-	<div class="max-w-4xl mx-auto px-6 py-6">
-		<img
-		src="/assets/logo/dokumint.svg"
-		alt="Dokumint"
-		class="h-8 dark:hidden"
-		/>
-		<img
-		src="/assets/logo/dokumint-dark.svg"
-		alt="Dokumint"
-		class="h-8 hidden dark:block"
-		/>
-	</div>
-  </header>
+      <!-- Header -->
+    <header class="border-b border-gray-200 dark:border-gray-800">
+      <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <img
+            src="/images/dokumint-logo.svg"
+            alt="Dokumint"
+            class="h-7 w-auto"
+          />
+          <span class="text-xl font-semibold tracking-tight">
+            Dokumint
+          </span>
+        </div>
+
+        <nav class="flex items-center gap-6 text-sm">
+          <a href="/docs" class="text-gray-500 hover:text-gray-900 dark:hover:text-gray-100">
+            Docs
+          </a>
+          <a href="/github" class="text-gray-500 hover:text-gray-900 dark:hover:text-gray-100">
+            GitHub
+          </a>
+          <a
+            href="/login"
+            class="px-4 py-2 rounded-lg bg-gray-900 text-white dark:bg-gray-100 dark:text-gray-900 hover:opacity-90"
+          >
+            Get Started
+          </a>
+        </nav>
+      </div>
+    </header>
 
   <main class="max-w-4xl mx-auto px-6 py-16 space-y-14">
 
-			<!-- HERO -->
-			<section class="relative rounded-xl border border-gray-200 dark:border-gray-800
-							bg-gray-50 dark:bg-gray-900
-							p-10 space-y-6">
-				<h1 class="text-4xl md:text-5xl font-semibold tracking-tight">
-					Documentation built by MSPs,<br class="hidden sm:block" />
-					not product managers.
-				</h1>
+			    <!-- Hero -->
+    <section class="max-w-6xl mx-auto px-6 py-20">
+      <div class="max-w-3xl">
+        <h1 class="text-5xl font-semibold leading-tight mb-6">
+          Documentation built by MSPs,<br />
+          not product managers
+        </h1>
 
-				<p class="text-gray-700 dark:text-gray-300 leading-relaxed max-w-2xl">
-					Doku<span class="org-mint">m</span>int is a modern MSP documentation system designed
-					around how technicians actually work — not how vendors want to sell.
-				</p>
+        <p class="text-xl text-gray-500 dark:text-gray-400 leading-relaxed mb-8">
+          Doku<span class="org-mint">m</span>int is a modern MSP documentation system designed around how
+          technicians actually work — not how vendors want to sell.
+        </p>
 
-				<div class="pt-6 text-sm text-gray-500 dark:text-gray-400">
-					Built from the ground up for real-world MSP workflows.
-				</div>
-			</section>
+        <div class="flex gap-4">
+          <a
+            href="/login"
+            class="px-6 py-3 rounded-lg bg-gray-900 text-white dark:bg-gray-100 dark:text-gray-900 hover:opacity-90"
+          >
+            Start Building
+          </a>
+
+          <a
+            href="/demo"
+            class="px-6 py-3 rounded-lg border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-900"
+          >
+            View Demo
+          </a>
+        </div>
+      </div>
+    </section>
 
 			<div class="h-px bg-gray-200 dark:bg-gray-800 my-12"></div>
 
-			<div class="space-y-14 py-14 bg-gray-50 dark:bg-gray-900 rounded-2xl px-8">
-				<!-- WHY -->
-				<section class="space-y-4 pt-12">
-					<h2 class="text-2xl font-semibold tracking-tight">
-						Why Doku<span class="org-mint">m</span>int exists
-					</h2>
+			    <section class="max-w-6xl mx-auto px-6 py-16">
+      <div class="grid md:grid-cols-2 gap-12">
+        <div>
+          <h2 class="text-3xl font-semibold mb-4">
+            Why Dokumint exists
+          </h2>
+          <p class="text-gray-500 dark:text-gray-400 leading-relaxed">
+            Most documentation platforms grew by bolting features onto an old
+            core. Permissions came later. Structure came later. Multi-tenancy
+            came even later.
+          </p>
+        </div>
 
-					<p class="text-gray-700 dark:text-gray-300 leading-relaxed">
-						Most documentation platforms grew by bolting features onto an old core.
-						Permissions came later. Structure came later. Multi-tenancy came even
-						later.
-					</p>
+        <div>
+          <p class="text-gray-500 dark:text-gray-400 leading-relaxed">
+            Dokumint started clean. Tenants, roles, permissions, and data
+            boundaries were treated as first-class concerns from day one.
+          </p>
+        </div>
+      </div>
+    </section>
 
-					<p class="text-gray-700 dark:text-gray-300 leading-relaxed">
-						Doku<span class="org-mint">m</span>int started clean. Tenants, roles, permissions, and data boundaries
-						were treated as first-class concerns from day one.
-					</p>
-				</section>
 				
-				<!-- INCLUDED BY DEFAULT -->
-				<section class="space-y-4">
-					<h2 class="text-2xl font-semibold tracking-tight">
-						Included by default
-					</h2>
+	    <section class="max-w-6xl mx-auto px-6 py-16">
+      <h2 class="text-3xl font-semibold mb-12">
+        Included by default
+      </h2>
 
-					<div class="border border-gray-200 dark:border-gray-800 rounded-lg p-6">
-						<ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
-						<li>Proper multi-tenancy (not an afterthought)</li>
-						<li>Role-based access control</li>
-						<li>Structured, typed assets</li>
-						<li>Encrypted password storage</li>
-						<li>Revision history</li>
-						<li>API-first design</li>
-						</ul>
-					</div>
-				</section>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-6 border border-gray-200 dark:border-gray-800 rounded-xl">
+          <h3 class="font-semibold mb-2">Proper multi-tenancy</h3>
+          <p class="text-sm text-gray-500 dark:text-gray-400">
+            Not an afterthought
+          </p>
+        </div>
+
+        <div class="p-6 border border-gray-200 dark:border-gray-800 rounded-xl">
+          <h3 class="font-semibold mb-2">Role-based access control</h3>
+          <p class="text-sm text-gray-500 dark:text-gray-400">
+            Built in from day one
+          </p>
+        </div>
+
+        <div class="p-6 border border-gray-200 dark:border-gray-800 rounded-xl">
+          <h3 class="font-semibold mb-2">Structured assets</h3>
+          <p class="text-sm text-gray-500 dark:text-gray-400">
+            Typed, queryable, predictable
+          </p>
+        </div>
+
+        <div class="p-6 border border-gray-200 dark:border-gray-800 rounded-xl">
+          <h3 class="font-semibold mb-2">Encrypted passwords</h3>
+          <p class="text-sm text-gray-500 dark:text-gray-400">
+            Security at the core
+          </p>
+        </div>
+
+        <div class="p-6 border border-gray-200 dark:border-gray-800 rounded-xl">
+          <h3 class="font-semibold mb-2">Revision history</h3>
+          <p class="text-sm text-gray-500 dark:text-gray-400">
+            Every change tracked
+          </p>
+        </div>
+
+        <div class="p-6 border border-gray-200 dark:border-gray-800 rounded-xl">
+          <h3 class="font-semibold mb-2">API-first design</h3>
+          <p class="text-sm text-gray-500 dark:text-gray-400">
+            Automate everything
+          </p>
+        </div>
+      </div>
+    </section>
+
 				
-				<!-- STAND APART -->
-				<section class="space-y-4">
-					<h2 class="text-2xl font-semibold tracking-tight">
-						Designed around reality
-					</h2>
+	    <section class="max-w-6xl mx-auto px-6 py-16">
+      <div class="bg-gray-100 dark:bg-gray-900 rounded-xl p-10">
+        <h2 class="text-3xl font-semibold mb-4">
+          Status
+        </h2>
+        <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-2">
+          Dokumint is actively developed and used in real MSP environments.
+        </p>
+        <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+          We’re building what actually gets used — not chasing checkbox parity.
+        </p>
+      </div>
+    </section>
 
-					<div class="border border-gray-200 dark:border-gray-800 rounded-lg p-6">
-						<ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
-							<li>
-								Assets aren’t flat notes — they’re structured, queryable, and typed.
-							</li>
-							<li>
-								Passwords can live where they make sense, not just in a disconnected
-								vault.
-							</li>
-							<li>
-								Tenants, customers, and technicians are cleanly separated by design.
-							</li>
-						</ul>
-					</div>	
-				</section>
-			</div>	
-
-			<!-- STATUS -->
-			<section class="space-y-4">
-				<h2 class="text-2xl font-semibold tracking-tight">
-					Status
-				</h2>
-
-				<p class="text-gray-700 dark:text-gray-300 leading-relaxed">
-					Doku<span class="org-mint">m</span>int is actively developed and used in real MSP environments.
-				</p>
-
-				<p class="text-gray-700 dark:text-gray-300 leading-relaxed">
-					We’re not chasing feature parity for the sake of it. We’re building what
-					actually gets used.
-				</p>
-			</section>
 			
 		</main>
-		<footer class="border-t border-gray-200 dark:border-gray-800 mt-24">
-			<div class="max-w-4xl mx-auto px-6 py-8 text-sm text-gray-500 dark:text-gray-400">
-				Doku<span class="org-mint">m</span>int is built by MSPs, for MSPs.
-			</div>
-		</footer>
+		<footer class="border-t border-gray-200 dark:border-gray-800 mt-20">
+      <div class="max-w-6xl mx-auto px-6 py-12 text-sm text-gray-500 dark:text-gray-400">
+        © {new Date().getFullYear()} Doku<span class="org-mint">m</span>int. Built for MSPs, by MSPs.
+      </div>
+    </footer>
 
 	</body>
 </html>
