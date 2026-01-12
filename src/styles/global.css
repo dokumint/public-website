@@ -1,5 +1,242 @@
 @import "tailwindcss";
 
-.org-mint {
-    color: #3BC5A2;
+/* =================================================
+   Dokumint – Semantic colour tokens
+   Single source of truth
+================================================= */
+
+:root[data-theme="light"] {
+
+  /* ---------------------------------------------
+     BACKGROUNDS
+  --------------------------------------------- */
+
+  --bg-background: oklch(0.991 0.000 127.5);   /* app background */
+  --bg-bgcard:     oklch(0.970 0.000 127.5);             /* cards */
+  --field:      oklch(0.9738 0.00011 271.152);   /* inputs, textareas */
+	--bg-hover:			 oklch(0.9243 0.004 250);
+  --bg-bgsidebar:    oklch(0.97 0.01 250);     /* sidebar + header */
+  --bg-context:    oklch(0.91 0.015 250);    /* context panels */
+	--border: oklch(0.851 0.000 127.5);
+	--bg-muted:			 oklch(0.8917 0.004 250);
+	--bg-active: 		 oklch(0.44 0.08 245);
+	--button: 			 oklch(0.765 0.085 214.2);
+	--button-primary: oklch(0.765 0.085 214.2);
+  --button-secondary: oklch(0.725 0.177 47.7);
+  --button-accent: oklch(0.686 0.168 254.8);
+
+  --bg : oklch(0.991 0.000 127.5);
+  --card : oklch(0.970 0.000 127.5);
+  --card2 : oklch(0.925 0.000 127.5);
+  --text : oklch(0.218 0.000 127.5);
+  --textMuted : oklch(0.442 0.000 127.5);
+  --textOnColor : oklch(1.000 0.000 127.5);
+  --primary : oklch(0.718 0.093 171.0);
+  --primaryFg : oklch(1.000 0.000 127.5);
+  --secondary : oklch(0.688 0.074 214.1);
+  --secondaryFg : oklch(0.000 0.000 0.0);
+  --accent : oklch(0.591 0.096 264.9);
+  --accentFg : oklch(0.000 0.000 0.0);
+  --border : oklch(0.795 0.000 127.5);
+  --ring : oklch(0.600 0.139 270.9);
+  --good : oklch(0.571 0.097 179.3);
+  --goodFg : oklch(1.000 0.000 127.5);
+  --warn : oklch(0.717 0.176 55.6);
+  --warnFg : oklch(0.097 0.000 127.5);
+  --bad : oklch(0.428 0.171 14.2);
+  --badFg : oklch(1.000 0.000 127.5);
+
+
+	/* -------------------------------------------------
+     TYPOGRAPHY
+  ------------------------------------------------- */
+	
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+	
+  /* ---------------------------------------------
+     TEXT – CORE
+  --------------------------------------------- */
+
+  --text-foreground: oklch(0.226 0.000 127.5);   /* default body text */
+  --text-heading:    oklch(0.14 0.015 250);  /* subtle emphasis */
+  --text-muted:      oklch(0.439 0.000 127.5);   /* disabled / secondary */
+  --on-button: 			 oklch(1.000 0.000 127.5);
+  --text-brand:      oklch(0.6883 0.0743 214.08);
+
+  /* ---------------------------------------------
+     BRAND / SEMANTIC TEXT
+  --------------------------------------------- */
+
+  --text-primary:   oklch(0.765 0.085 214.2);    
+  --text-secondary: oklch(0.725 0.177 47.7);    
+  --text-light:     oklch(0.9761 0 0);
+  --text-on-color:  oklch(1.000 0.000 127.5);
+  --text-on-primary: oklch(1.000 0.000 127.5);
+  --text-on-secondary: oklch(0.000 0.000 0.0);
+  --text-accent:    oklch(0.686 0.168 254.8);
+  --text-on-accent: oklch(0.000 0.000 0.0);
+  --text-info:      oklch(0.55 0.14 245);
+  --text-warning:   oklch(0.755 0.178 59.7);
+	--text-notice:		oklch(0.6691 0.1158 89.2);
+  --text-on-warning: oklch(0.097 0.000 127.5);
+  --text-destructive: oklch(0.453 0.186 29.2);
+  --text-on-destructive: oklch(1.000 0.000 127.5);
+  --text-success:   oklch(0.78 0.16 168);    
+  
+
+
+  /* ---------------------------------------------
+     LINKS
+  --------------------------------------------- */
+
+  --text-link:       oklch(0.44 0.08 245);   /* blue */
+  --text-link-hover: oklch(0.78 0.16 168);  /* green */
+	--bg-link: 				 oklch(0.44 0.08 245);
+	--bg-link-hover:   oklch(0.78 0.16 168);
+	
+	/* ---------------------------------------------
+     STATUS BACKGROUNDS
+  --------------------------------------------- */
+
+  --bg-info:        oklch(0.90 0.05 245);
+	--bg-notice:			oklch(0.755 0.178 59.7);
+  --bg-warning:     oklch(0.755 0.178 59.7);
+  --bg-destructive: oklch(0.453 0.186 29.2);
+  --bg-bgsuccess:     oklch(0.520 0.080 180.3);
+	--bg-bgsecondary:		oklch(0.2893 0.08 245);
+
+  /* ---------------------------------------------
+     STATUS FOREGROUNDS (ON COLOUR)
+  --------------------------------------------- */
+
+  --on-info:        oklch(0.15 0.02 245);
+	--on-notice:			oklch(0.1202 0.1158 89.2);
+  --on-warning:     oklch(0.20 0.04 75);
+  --on-destructive: oklch(1 0 0);
+  --on-success:     oklch(0.16 0.01 248);
+	--on-inactive:		oklch(0.4377 0.004 250);
+	--on-secondary: 	oklch(0.9273 0 0);
+}
+
+
+/* =================================================
+   DARK MODE
+================================================= */
+
+:root[data-theme="dark"] {
+
+  /* ---------------------------------------------
+     BACKGROUNDS
+  --------------------------------------------- */
+
+  --bg-background: oklch(0.2714 0.0363 250.82);
+  --bg-bgcard:     oklch(0.122 0.000 127.5);
+  --field:    oklch(0.3289 0.00004 271.152);
+	--bg-hover:	 		 oklch(0.2567 0.015 230);
+  --bg-sidebar:    oklch(0.150 0.000 127.5);
+	--bg-muted:			 oklch(0.650 0.000 127.5);
+  --bg-context:    oklch(0.22 0.02 235);
+	--border:        oklch(0.252 0.000 127.5);
+	--button: 			 oklch(0.822 0.130 181.3);   
+
+  --bg : oklch(0.205 0.000 127.5);
+  --card : oklch(0.252 0.006 179.2);
+  --card2 : oklch(0.150 0.000 127.5);
+  --text : oklch(0.919 0.000 127.5);
+  --textMuted : oklch(0.650 0.000 127.5);
+  --textOnColor : oklch(0.000 0.000 0.0);
+  --primary : oklch(0.648 0.083 171.3);
+  --primaryFg : oklch(0.000 0.000 0.0);
+  --secondary : oklch(0.621 0.066 214.4);
+  --secondaryFg : oklch(0.000 0.000 0.0);
+  --accent : oklch(0.535 0.085 265.1);
+  --accentFg : oklch(0.000 0.000 0.0);
+  --border : oklch(0.252 0.000 127.5);
+  --ring : oklch(0.599 0.098 271.7);
+  --good : oklch(0.622 0.082 179.5);
+  --goodFg : oklch(0.000 0.000 0.0);
+  --warn : oklch(0.716 0.150 55.4);
+  --warnFg : oklch(0.000 0.000 0.0);
+  --bad : oklch(0.541 0.158 13.1);
+  --badFg : oklch(1.000 0.000 127.5);
+
+  /* ---------------------------------------------
+     TEXT – CORE
+  --------------------------------------------- */
+
+  --text-foreground: oklch(0.919 0.000 127.5);
+  --text-heading:    oklch(0.96 0.01 255);
+  --text-muted:      oklch(0.650 0.000 127.5);
+  --on-button: 			 oklch(0.000 0.000 0.0);
+
+  /* ---------------------------------------------
+     BRAND / SEMANTIC TEXT
+  --------------------------------------------- */
+
+  --text-primary:   oklch(0.822 0.130 181.3);
+  --text-secondary: oklch(0.600 0.151 47.3);
+  --text-accent:    oklch(0.699 0.152 254.8);
+
+  --text-info:        oklch(0.68 0.12 245);
+  --text-warning:     oklch(0.756 0.151 60.1);
+  --text-destructive: oklch(0.503 0.158 29.1);
+  --text-success:     oklch(0.571 0.068 179.9);
+  --text-brand:      oklch(0.6883 0.0743 214.08);
+
+  /* ---------------------------------------------
+     LINKS
+  --------------------------------------------- */
+
+  --text-link:       oklch(0.822 0.130 181.3);
+  --text-link-hover: oklch(56.313% 0.11236 169.153);
+	
+	--bg-info:        oklch(0.32 0.08 245);
+	--bg-notice:			oklch(0.756 0.151 60.1);
+  --bg-warning:     oklch(0.756 0.151 60.1);
+  --bg-destructive: oklch(0.503 0.158 29.1);
+  --bg-bgsuccess:     oklch(0.571 0.068 179.9);
+	--bg-bgsecondary:		oklch(0.600 0.151 47.3);
+
+  --on-info:        oklch(0.96 0.01 255);
+	--on-notice:			oklch(0.000 0.000 0.0);
+  --on-warning:     oklch(0.000 0.000 0.0);
+  --on-destructive: oklch(1 0 0);
+  --on-success:     oklch(0.16 0.01 248);
+	--on-inactive:		oklch(1 0 0);
+	--on-secondary: 	oklch(1.000 0.000 127.5);
+  --on-accent:      oklch(0.000 0.000 0.0);
+}
+
+html {
+  /* Default light theme */
+  color-scheme: light;
+}
+html[data-theme='dark'] {
+  /* Dark theme */
+  color-scheme: dark;
+}
+
+.text-brand {
+    color: var(--text-brand);
+}
+
+.bg-background {
+    background: var(--bg-background);
+}
+
+.text-foreground {
+    color: var(--text-foreground);
+}
+
+.border-border {
+    color: var(--border);
+}
+
+.bg-card {
+    background: var(--card);
+}
+
+.bg-card2 {
+    background: var(--card2);
 }
